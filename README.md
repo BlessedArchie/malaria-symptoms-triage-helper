@@ -8,7 +8,7 @@ Understanding when to seek care is critical in resource-limited rural settings. 
 - Reduce delays in treatment for severe cases
 - Support (not replace) frontline health workers in prioritising who needs attention first
 
-We use a Random Forest Classifier, benchmarked against a Logistic Regression baseline, to classify urgency level while keeping the model interpretable enough to explain its reasoning to non-clinical users.
+I use a Random Forest Classifier, benchmarked against a Logistic Regression baseline, to classify urgency level while keeping the model interpretable enough to explain its reasoning to non-clinical users.
 
 **Important note:** This tool is a triage-support prototype only. It does not diagnose malaria or any other illness — it suggests when a patient may want to seek care based on reported symptoms.
 
@@ -70,22 +70,9 @@ This tool is a triage-support prototype and does not diagnose malaria or any oth
 
 > ⚠️ This tool does NOT diagnose malaria or any medical condition. It only provides a general suggestion on how urgently you may need to seek care, based on the symptoms you report. It is not a substitute for professional medical advice. If symptoms are severe, worsening, or you are unsure, seek care from a qualified health worker immediately.
 
-## How to Run
-1. Clone this repository.
-2. Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Open `notebooks/malaria_triage_helper.ipynb` in Jupyter or Google Colab.
-4. Run all cells in order (EDA → encoding → feature selection → modelling → evaluation → demo).
-5. To reuse the trained model without retraining:
-   ```python
-   import joblib
-   model = joblib.load('models/rf_selected.pkl')
-   ```
 
-## Demo
-[Link to 2–3 minute demo video]
+
+
 
 ## Tools Used
 Python, Pandas, scikit-learn, Google Colab, Matplotlib, Seaborn
