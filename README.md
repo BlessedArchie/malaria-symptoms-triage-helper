@@ -13,7 +13,7 @@ I use a Random Forest Classifier, benchmarked against a Logistic Regression base
 **Important note:** This tool is a triage-support prototype only. It does not diagnose malaria or any other illness — it suggests when a patient may want to seek care based on reported symptoms.
 
 ## Dataset
-The dataset is loaded directly from Google Drive into a Pandas DataFrame. It contains 30,000 patient records with 9 attributes capturing reported malaria symptoms (Fever, Headache, Chills, Fatigue), patient demographics (Age, Gender, Weight, Location), and the resulting severity outcome used to derive the urgency label.
+The dataset is downloaded from Kaggle: Malaria Severity Dataset (by Victor Aleruchi Kalagbor) loaded directly from Google Drive into a Pandas DataFrame. It contains 30,000 patient records with 9 attributes capturing reported malaria symptoms (Fever, Headache, Chills, Fatigue), patient demographics (Age, Gender, Weight, Location), and the resulting severity outcome used to derive the urgency label.
 
 | # | Feature | Type | Description |
 |---|---|---|---|
